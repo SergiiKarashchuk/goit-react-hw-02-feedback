@@ -20,6 +20,10 @@ export class App extends Component {
 
         case 'Bad':
           return { bad: prevValue.bad + 1 };
+
+        default:
+          console.log('Something wrong');
+          return;
       }
     });
   };
